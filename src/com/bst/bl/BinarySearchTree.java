@@ -47,8 +47,9 @@ public class BinarySearchTree <K extends Comparable<K>>{
     }
     public int getSize(){
         return this.getSizeBinary(root);
-        
-    }public int getSizeBinary(BinaryNode<K> current){
+     }
+
+    public int getSizeBinary(BinaryNode<K> current){
         return current == null ? 0 : 1 +
         		this.getSizeBinary(current.left)+this.getSizeBinary(current.right);
     }
